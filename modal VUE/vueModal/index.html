@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+    <div class="cards">
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" alt="dsdss">
+            <h2>Jeans</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ut aperiam quibusdam, obcaecati nulla nobis iusto, asperiores deleniti nemo ipsa rem quas fugit dolores dignissimos? Temporibus doloribus quidem quaerat deleniti?</p>
+            <button class="button" @click="showModal = true"><b>INFO</b></button>
+        </div>
+       
+        
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" alt="dsdss">
+            <h2>Patike</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ut aperiam quibusdam, obcaecati nulla nobis iusto, asperiores deleniti nemo ipsa rem quas fugit dolores dignissimos? Temporibus doloribus quidem quaerat deleniti?</p>
+            <button class="button" @click="showModal2 = true"><b>INFO</b></button>
+        </div>
+    </div>
+      
+        <div class="modal" v-if="showModal">
+            <h1>Lorem Ipsum</h1>
+            <p>Ovo je za jeans. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, quia ad. Repellat, suscipit numquam quis ut dolorum qui architecto vel asperiores velit veniam doloremque ipsam tempora adipisci deleniti cupiditate et.</p>
+            <button class="button" @click='showModal = false'>Cancel</button>
+        </div>
+        <div class="modal" v-if="showModal2">
+            <h1>Lorem Ipsum</h1>
+            <p>Ovo je za patike. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, quia ad. Repellat, suscipit numquam quis ut dolorum qui architecto vel asperiores velit veniam doloremque ipsam tempora adipisci deleniti cupiditate et.</p>
+            <button class="button" @click='showModal2 = false'>Cancel</button>
+        </div>
+       
+    </div>
+  
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="modal.js"></script>
+</body>
+</html>
